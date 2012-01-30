@@ -50,12 +50,12 @@ Installation
 
     git clone git://github.com/tsotne/skeleton-stylus.git
     cd skeleton-stylus
-    mv skeleton.styl ~/path/to/your/project/public/css/skeleton.style
+    mv skeleton.styl ~/path/to/your/project/public/css/skeleton.styl
 
-Then in your main .style file
+Then in your main .styl file
 
     @import 'skeleton'
-    
+
 
 Functions
 ----------------
