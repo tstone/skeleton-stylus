@@ -45,6 +45,18 @@ Additionally, skeleton-stylus makes use of Stylus bug fix #554 (https://github.c
 which at the time of writing (2/2/2012) wasn't yet part of Stylus.
 
 
+Installation
+------------
+
+    git clone git://github.com/tsotne/skeleton-stylus.git
+    cd skeleton-stylus
+    mv skeleton.styl ~/path/to/your/project/public/css/skeleton.style
+
+Then in your main .style file
+
+    @import 'skeleton'
+    
+
 Functions
 ----------------
 
