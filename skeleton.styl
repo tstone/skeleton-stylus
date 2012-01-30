@@ -1,0 +1,128 @@
+/*
+ *
+ * skeleton-stylus v0.1
+ * A port of "Skeleton" into the Stylus language.
+ * Ported 2012 by Titus Stone.
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * ORIGINAL:
+ * Skeleton V1.1
+ * Copyright 2011, Dave Camache
+ * www.getskeleton.com
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 8/17/2011
+ *
+*/
+
+// alpha
+skeleton-alpha()
+    margin-left 0
+
+    @media only screen and (min-width: 768px) and (max-width: 959px)
+        &
+            margin-right 10px
+
+// clearfix
+skeleton-clearfix()
+    content "\0020"
+    display block
+    height 0
+    clear both
+    visibility hidden
+
+// omega
+skeleton-omega()
+    margin-right 0
+
+    @media only screen and (min-width: 768px) and (max-width: 959px)
+        &
+            margin-left 10px
+
+// alphaomega
+skeleton-alphaomega()
+    @media only screen and (min-width: 768px) and (max-width: 959px)
+        &
+            margin-left 0
+            margin-right 0
+
+// container
+skeleton-container()
+    position relative
+    width 960px
+    margin 0 auto
+    padding 0
+
+    &:after
+        skeleton-clearfix()
+
+    @media only screen and (min-width: 768px) and (max-width: 959px)
+        &
+            width 768px
+    @media only screen and (max-width: 767px)
+        &
+            width 300px
+    @media only screen (min-width: 480px) and (max-width: 767px)
+        &
+            width 420px
+
+// offset
+skeleton-offset(w)
+    padding-left unit(w * 60, px)
+
+    @media only screen and (min-width: 768px) and (max-width: 959px)
+        &
+            padding-left unit(w * 48, px)
+
+// row
+skeleton-row()
+    margin-bottom 20px
+    zoom 1
+    &:before
+    &:after
+        skeleton-clearfix()
+        width 0
+        overflow hidden
+    &:after
+        clear both
+
+// column
+skeleton-column(w)
+    float left
+    display inline
+    margin-left 10px
+    margin-right 10px
+
+    @media only screen and (min-width: 960px)
+        &
+            if w < 1
+                if w == 0.3 || w == 0.33
+                    width 300px
+                else if w == 0.6 || w == 0.66
+                    width 620px
+            else
+                width unit(((w - 1) * 60) + 40, px)
+
+    @media only screen and (min-width: 768px) and (max-width: 959px)
+        &
+            if w < 1
+                if w == 0.3 || w == 0.33
+                    width 236px
+                else if w == 0.6 || w == 0.66
+                    width 492px
+            else
+                width unit((w * 48) - 20, px)
+
+    @media only screen and (max-width: 767px)
+        &
+            margin 0
+            width 300px
+
+    @media only screen (min-width: 480px) and (max-width: 767px)
+        &
+            width 420px
+
+// columns
+skeleton-columns(w)
+    skeleton-column(w)
