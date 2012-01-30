@@ -2,9 +2,7 @@
 skeleton-stylus
 ---------------
 
-A port of "Skeleton" into the Stylus language.
-Free to use under the MIT license.
-http://www.opensource.org/licenses/mit-license.php
+A port of "Skeleton" into the Stylus language.  Free to use under the MIT license.  http://www.opensource.org/licenses/mit-license.php
 
 
 Why
@@ -47,7 +45,7 @@ Additionally, skeleton-stylus makes use of Stylus bug fix #554 (https://github.c
 which at the time of writing (2/2/2012) wasn't yet part of Stylus.
 
 
-Stylus Functions
+Functions
 ----------------
 
     skeleton-alpha
