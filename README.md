@@ -14,8 +14,8 @@ It requires, however, the HTML to be altered in order to make sure of it.
     // index.html
     <div class="column eight sidebar"></div>
 
-Changes are you already had a class or ID on the element (like "sidebar").  Using
-stylus the Skeleton classes can be mixed into the classes you already have setup,
+Chances are you already have a class or ID on the element (like ".sidebar").  Using
+Stylus, the Skeleton classes can be mixed into the classes you already have setup,
 or mixed into HTML5 tags.
 
     // style.styl
@@ -30,7 +30,7 @@ This allows you to integrate Skeleton without ever needing to touch the site's H
 Base tags could also be globally extended.
 
     // style.styl
-    aside
+    body > aside
         skeleton-columns(5)
 
     // index.html
